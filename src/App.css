@@ -1,0 +1,138 @@
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.movie-card {
+  position: relative;
+  height: 50vh;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.75rem;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+/* New styles for the emoji container */
+.emoji-container {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 9999px;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+}
+
+.movie-card-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(17, 24, 39, 0.4);
+  padding: 0.5rem;
+}
+
+.pagination-container {
+  background-color: #9ca3af; /* Tailwind's bg-gray-400 */
+  padding: 1rem; /* Tailwind's p-4 */
+  margin-top: 2rem; /* Tailwind's mt-8 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-button {
+  padding-left: 1rem; /* Tailwind's px-4 */
+  padding-right: 1rem; /* Tailwind's px-4 */
+  cursor: pointer;
+}
+
+.pagination-page-number {
+  font-weight: bold; /* Tailwind's font-bold */
+}
+
+/* Movies Container Styles */
+.movies-container {
+  font-size: 1.5rem; /* Tailwind's text-2xl */
+  font-weight: bold; /* Tailwind's font-bold */
+  text-align: center; /* Tailwind's text-center */
+  margin: 0.5rem; /* Tailwind's m-2 */
+  padding: 1.25rem; /* Tailwind's p-5 */
+}
+
+.movies-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: around; /* This should translate to 'justify-around' */
+  gap: 1.25rem; /* Tailwind's gap-5 */
+}
+
+/* Banner Styles */
+.banner {
+  height: 20vh; /* Tailwind's h-[20vh] */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0;
+}
+
+.banner-title {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem; /* Tailwind's text-xl */
+  background-color: rgba(17, 24, 39, 0.6); /* Tailwind's bg-gray-900/60 */
+  padding: 1rem; /* Tailwind's p-4 */
+}
+
+@media screen and (min-width: 768px) {
+  /* Tailwind's md: */
+  .banner {
+    height: 85vh; /* Tailwind's md:h-[85vh] */
+  }
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-logo {
+  width: 50px;
+}
+
+.navbar-link {
+  color: #2563eb;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navbar-link,
+.navbar-link:visited,
+.navbar-link:hover,
+.navbar-link:active {
+  text-decoration: none;
+  color: #2563eb;
+}
