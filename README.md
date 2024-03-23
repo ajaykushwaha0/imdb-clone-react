@@ -33,11 +33,12 @@ Once you have your API key, you need to set it up in the project:
 3. Install the necessary dependencies.
 4. Open the `Movies.jsx` file located in the `src` directory.
 5. Find the line that contains the placeholder for the API key and replace it with your API key.
-Running the Application
+
+### Running the Application
 npm install
 npm run dev
 
-To build the app for production, run:
+### To build the app for production, run:
 npm run build
 
 License
