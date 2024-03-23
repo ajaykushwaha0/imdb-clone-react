@@ -35,8 +35,8 @@ Once you have your API key, you need to set it up in the project:
 5. Find the line that contains the placeholder for the API key and replace it with your API key.
 
 ### Running the Application
-npm install
-npm run dev
+- npm install
+- npm run dev
 
 ### To build the app for production, run:
 npm run build
